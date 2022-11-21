@@ -5,10 +5,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import "primereact/resources/themes/saga-green/theme.css";  
+import "primereact/resources/primereact.min.css";                  
+import "primeicons/primeicons.css";                                
+ 
 import './index.css';
-import App from './App';
+import App from './pages/App';
 
 import reportWebVitals from './reportWebVitals';
+
+document.title = 'coto'
 
 const router = createBrowserRouter([
   {
