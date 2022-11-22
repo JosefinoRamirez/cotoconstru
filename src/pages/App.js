@@ -62,7 +62,7 @@ const App = () => {
       <section className="py-40 flex flex-col items-center container mx-auto">
         <img src="./LogoIcon.png" alt="Coto Icon Logo" className="w-14 mb-5"/>
         <div className="flex flex-col items-center max-w-xl mb-16">
-          <h5 className="text-xl mb-4">We are a construction company</h5>
+          <p className="text-xl mb-4">We are a construction company</p>
           <h1 className="text-6xl text-center mb-4">We develop luxury projects in paradise.</h1>
           <p className="text-center mb-6 max-w-lg">Based in the south of Costa Rica, we are dedicated to delivering world-class projects to the most demanding clients</p>
           <Button label="Check our work >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
@@ -82,7 +82,7 @@ const App = () => {
       <section style={{ backgroundColor: '#0B4242' }} className="pb-28 flex flex-col items-center">
         <img src="./Hero1.png" alt="Details" className="w-full mb-16"/>
         <div className="flex flex-col items-center max-w-xl text-white">
-          <h5 className="text-xl mb-4">You’re in good hands</h5>
+          <p className="text-xl mb-4">You’re in good hands</p>
           <h1 className="text-6xl text-center mb-4">Our obsession with details is contagious.</h1>
           <p className="text-center mb-6 max-w-lg">Our number one source for business is repeat clients and referrals from current and previous clients.</p>
           <Button label="About Us >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#ffffff' }} />
@@ -90,7 +90,7 @@ const App = () => {
       </section>
       <section style={{ backgroundColor: '#132523' }} className="pb-28 flex flex-col items-center">
         <div className="flex flex-col items-center max-w-xl text-white pt-36">
-          <h5 className="text-xl mb-4">Ready to get started?</h5>
+          <p className="text-xl mb-4">Ready to get started?</p>
           <h1 className="text-6xl text-center mb-4">Let’s start talking about your project.</h1>
           <span className="flex flex-col w-3/4 mb-3">
             <label>Email Address</label>
