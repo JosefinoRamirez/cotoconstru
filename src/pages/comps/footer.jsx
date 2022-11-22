@@ -13,8 +13,8 @@ const Footer = () => {
           </section>
           <section className="flex flex-col">
             <h6>Contact Us</h6>
-            <p>(+506) 8888-0032</p>
-            <p>contact@cotocompany.com</p>
+            <p><i className="pi pi-phone"></i> (+506) 8888-0032</p>
+            <p><i className="pi pi-envelope"></i> contact@cotocompany.com</p>
           </section>
           <section className="flex flex-col w-96">
             <h6>Visit Us</h6>
@@ -22,7 +22,11 @@ const Footer = () => {
           </section>
         </div>
         <div className="container m-auto flex justify-between pt-8 pb-24">
-          <p>Follow Us</p>
+          <section className="flex w-32 justify-between">
+            <p>Follow Us</p>
+            <a href="/"><li className="pi pi-facebook"></li></a>
+            <a href="/"><li className="pi pi-linkedin"></li></a>
+          </section>
           <p><small>© Coto Company, Costa Rica, 2022. All rights reserved.  Powered by Milk Design Studio. </small></p>
         </div>
       </footer>
