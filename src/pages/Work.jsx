@@ -52,7 +52,7 @@ const Work = () => {
 
     const ItemTemplateCase = (props) => {
         return (
-            <div className="flex flex-col items-center" style={{ width: '30%' }}>
+            <div className="flex flex-col items-center w-full md:w-1/4 mb-20 md:mb-0">
                 <Carousel 
                     value={images} 
                     numVisible={1} 
@@ -87,7 +87,7 @@ const Work = () => {
                 item={itemTemplate} 
             />
         </section>
-        <section className='container mx-auto px-8 md:px-0 flex justify-between mb-32'>
+        <section className='container mx-auto px-8 md:px-0 flex flex-col md:flex-row justify-between mb-32'>
             <ItemTemplateCase/>
             <ItemTemplateCase/>
             <ItemTemplateCase/>
