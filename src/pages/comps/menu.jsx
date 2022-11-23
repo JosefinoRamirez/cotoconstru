@@ -7,7 +7,7 @@ const Menu = () => {
 
     return (
       <header className="py-4 container mx-auto">
-        <nav className="flex flex-row items-center justify-between justify-start px-8 md:px-0">
+        <nav className="flex flex-row items-center justify-between md:justify-start px-8 md:px-0">
           <img src="./Logo.png" alt="Logo Coto" className="w-20 mr-14"/>
           <div className="hidden md:block">
             <Link to={`/`} className="mr-6 mt-2">About</Link>
