@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
       <footer className="text-white py-24" style={{ backgroundColor: '#000000' }}>
-        <div className="container m-auto flex flex-row items-start justify-between border-b-white border-b-2 pb-24">
+        <div className="container m-auto flex flex-col md:flex-row items-start justify-between border-b-white border-b-2 pb-24">
           <img src="./LogoWhite.png" alt="Logo Coto" className="w-20 mr-14"/>
           <section className="flex flex-col">
             <h6>Site Map</h6>
