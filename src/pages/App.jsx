@@ -5,7 +5,8 @@ import Menu from "./comps/menu";
 import Footer from './comps/footer';
 
 const App = () => {
-
+  document.title = 'Coto'
+  
   const images = [
     { 'imageSrc': './Case1.png', 'alt': 'Case 1', 'caseTitle': 'Easter House Beach House', 'smallDesc': 'Small house description' },
     { 'imageSrc': './Case1.png', 'alt': 'Case 1', 'caseTitle': 'Easter House Beach House', 'smallDesc': 'Small house description' },

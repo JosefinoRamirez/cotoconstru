@@ -11,14 +11,25 @@ import "primeicons/primeicons.css";
  
 import './index.css';
 import App from './pages/App';
+import Work from './pages/Work';
 
 import reportWebVitals from './reportWebVitals';
-
-document.title = 'coto'
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <App/>,
+  },
+  {
+    path: "/about",
+    element: <App/>,
+  },
+  {
+    path: "/ourwork",
+    element: <Work/>,
+  },
+  {
+    path: "/contactus",
     element: <App/>,
   },
 ]);
