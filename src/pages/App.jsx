@@ -58,7 +58,7 @@ const App = () => {
         <Galleria 
           value={images} 
           responsiveOptions={responsiveOptions} 
-          numVisible={5} 
+          numVisible={1} 
           circular 
           showItemNavigators 
           showThumbnails={false} 
