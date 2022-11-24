@@ -1,6 +1,7 @@
 import { Galleria } from 'primereact/galleria';
 import { Button } from 'primereact/button';
 import { Carousel } from 'primereact/carousel';
+import { Link } from 'react-router-dom';
 
 import Menu from "./comps/menu";
 import Footer from './comps/footer';
@@ -62,7 +63,7 @@ const Work = () => {
                 />
                 <h2 className="text-2xl md:text-3xl text-center mb-2">Easter House Beach</h2>
                 <p className='w-3/4 mb-6'>Based in the south of Costa Rica, we are dedicated to delivering world-class projects to the most demanding clients</p>
-                <Button label="View Project >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
+                <Link to={'/project'}>Link to project</Link>
             </div>
         );
     }

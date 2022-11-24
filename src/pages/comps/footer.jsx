@@ -5,6 +5,8 @@ import { InputText } from 'primereact/inputtext';
 import { MultiSelect } from 'primereact/multiselect';
 import { Button } from 'primereact/button';
 
+import MenuItems from "./navItems";
+
 
 const Footer = () => {
     const [ usrEmail, setUsrEmail ] = useState('');
@@ -22,12 +24,12 @@ const Footer = () => {
         <section style={{ backgroundColor: '#132523' }} className="pb-28 flex flex-col items-center px-8 md:px-0">
           <div className="flex flex-col items-center max-w-xl text-white pt-36">
             <p className="text-xl mb-4">Ready to get started?</p>
-            <h1 className="text-5xl md:text-6xl text-center mb-4">Let’s start talking about your project.</h1>
-            <span className="flex flex-col w-3/4 mb-3">
+            <h1 className="text-5xl md:text-6xl text-left md:text-center mb-4">Let’s start talking about your project.</h1>
+            <span className="flex flex-col w-full md:w-3/4 mb-3">
               <label>Email Address</label>
               <InputText value={usrEmail} onChange={(e) => setUsrEmail(e.target.value)} placeholder="Enter you Email Address" className="rounded-lg" />
             </span>
-            <span className="flex flex-col w-3/4 mb-6">
+            <span className="flex flex-col w-full md:w-3/4 mb-6">
               <label>What services are you interested in?</label>
               <MultiSelect value={usrService} options={citySelectItems} onChange={(e) => setUsrService(e.value)} placeholder="Select all that apply" className="rounded-lg" />
             </span>
@@ -35,12 +37,12 @@ const Footer = () => {
           </div>
         </section>
         <div className="container m-auto flex flex-col md:flex-row items-start justify-between border-b-black md:border-b-white border-b-2 py-24 px-8 md:px-0 pb-8 md:pb-24">
-          <img src="./LogoWhite.png" alt="Logo Coto" className="w-20 mr-14 mb-7 md:mb-0"/>
+          <Link>
+            <img src="./LogoWhite.png" alt="Logo Coto" className="w-20 mr-14 mb-7 md:mb-0"/>
+          </Link>
           <section className="flex flex-col mb-7 md:mb-0">
             <h6>Site Map</h6>
-            <Link to={`/`} className="mr-6 mt-2">Homepage</Link>
-            <Link to={`/`} className="mr-6 mt-2">About</Link>
-            <Link to={`/`} className="mt-2">Our Projects</Link>
+            <MenuItems/>
           </section>
           <section className="flex flex-col mb-16 md:mb-0">
             <h6>Contact Us</h6>

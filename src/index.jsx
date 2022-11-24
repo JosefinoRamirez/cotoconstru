@@ -12,6 +12,7 @@ import "primeicons/primeicons.css";
 import './index.css';
 import App from './pages/App';
 import Work from './pages/Work';
+import Project from './pages/Project';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/ourwork",
     element: <Work/>,
+  },
+  {
+    path: "/project",
+    element: <Project/>,
   },
   {
     path: "/contactus",
