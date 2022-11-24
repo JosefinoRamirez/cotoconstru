@@ -14,6 +14,7 @@ import App from './pages/App';
 import Work from './pages/Work';
 import Project from './pages/Project';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contactus",
-    element: <App/>,
+    element: <Contact/>,
   },
 ]);
 

@@ -8,7 +8,7 @@ import { Button } from 'primereact/button';
 import MenuItems from "./navItems";
 
 
-const Footer = () => {
+const Footer = (props) => {
     const [ usrEmail, setUsrEmail ] = useState('');
     const [ usrService, setUsrService ] = useState('');
     const citySelectItems = [
