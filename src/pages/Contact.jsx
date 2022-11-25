@@ -9,6 +9,8 @@ import Menu from "./comps/menu";
 import Footer from "./comps/footer";
 
 const Contact = () => {
+    document.title = 'Contact Us'
+
     const [ usrEmail, setUsrEmail ] = useState('');
     const [ usrService, setUsrService ] = useState('');
     const citySelectItems = [

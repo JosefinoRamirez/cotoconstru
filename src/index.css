@@ -10,3 +10,31 @@
 h1, h2, h3, h4, h5, h6, a {
     font-family: 'Merriweather', serif;
 }
+
+.p-galleria .p-galleria-indicators .p-galleria-indicator button,
+.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+    background-color: #45B097;
+}
+
+.p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button,
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background-color: #0B4242;
+}
+
+.looking .p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button {
+    background-color: #DDFFF1;
+}
+
+.p-galleria-item-nav {
+    top: 35%;
+}
+
+.p-galleria .p-galleria-item-nav {
+    background: #103737;
+    border-radius: 35px;
+    border: 1px #DDFFF1 solid;
+}
+
+.p-galleria .p-galleria-item-nav:not(.p-disabled):hover {
+    background: #103737;
+}

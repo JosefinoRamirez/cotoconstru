@@ -40,7 +40,7 @@ const Looking = () => {
     ];
 
     return (
-        <section className='flex flex-col items-center pt-24 pb-32 text-white px-8 md:px-0' style={{ backgroundColor: '#103737' }}>
+        <section className='flex flex-col items-center pt-24 pb-32 text-white px-8 md:px-0 looking' style={{ backgroundColor: '#103737' }}>
             <h3 className='text-2xl'>Looking for more?</h3>
             <h4 className='text-3xl md:text-4xl mb-8'>Check other projects</h4>
             <div className='container mx-auto max-w-7xl'>
