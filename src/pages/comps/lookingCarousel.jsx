@@ -1,5 +1,6 @@
 import { Galleria } from 'primereact/galleria';
 import { Button } from 'primereact/button';
+import { Link } from 'react-router-dom';
 
 const itemTemplateSecond = (item) => {
     return (
@@ -12,7 +13,9 @@ const itemTemplateSecond = (item) => {
         />
         <h2 className="text-2xl md:text-3xl text-center mb-2">{item.caseTitle}</h2>
         <p className="mb-6 hidden md:block">{item.smallDesc}</p>
-        <Button label="About Us >" className="rounded-lg text-black" style={{ backgroundColor: '#ffffff', borderColor: '#ffffff' }} />
+        <Link to={'/project'}>
+            <Button label="View Project >" className="rounded-lg text-black" style={{ backgroundColor: '#ffffff', borderColor: '#ffffff' }} />
+        </Link>
       </div>
     );
 }

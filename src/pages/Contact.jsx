@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { InputText } from 'primereact/inputtext';
 import { MultiSelect } from 'primereact/multiselect';
@@ -20,6 +20,10 @@ const Contact = () => {
         {label: 'Istanbul', value: 'IST'},
         {label: 'Paris', value: 'PRS'}
     ];
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <div>

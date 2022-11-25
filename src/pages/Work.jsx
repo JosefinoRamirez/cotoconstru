@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { Galleria } from 'primereact/galleria';
 import { Button } from 'primereact/button';
 import { Carousel } from 'primereact/carousel';
@@ -40,7 +42,9 @@ const Work = () => {
                     className="mb-8"
                 />
                 <h2 className="text-2xl md:text-3xl text-center mb-2">{item.caseTitle}</h2>
-                <Button label="View Project >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
+                <Link to={'/project'}>
+                    <Button label="View Project >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
+                </Link>
             </div>
         );
     }
@@ -51,7 +55,7 @@ const Work = () => {
         );
     }
 
-    const ItemTemplateCase = (props) => {
+    const ItemTemplateCase = () => {
         return (
             <div className="flex flex-col items-center w-full md:w-1/4 mb-20 md:mb-0">
                 <Carousel 
@@ -67,6 +71,10 @@ const Work = () => {
             </div>
         );
     }
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
 
     return (
     <div>
