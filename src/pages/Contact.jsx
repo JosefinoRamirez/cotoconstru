@@ -38,7 +38,9 @@ const Contact = () => {
                 </div>
             </section>
             <img src="./Contact.png" alt="Contact" className="w-full" />
-            <Footer/>
+            <Footer
+                footerForm='hidden'
+            />
         </div>
     );
 }
