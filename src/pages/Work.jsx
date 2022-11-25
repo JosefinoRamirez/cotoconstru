@@ -41,7 +41,7 @@ const Work = () => {
                     style={{ width: '100%', display: 'block' }} 
                     className="mb-8"
                 />
-                <h2 className="text-2xl md:text-3xl text-center mb-2">{item.caseTitle}</h2>
+                <h2 className="text-2xl xl:text-3xl text-center mb-2">{item.caseTitle}</h2>
                 <Link to={'/project'}>
                     <Button label="View Project >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
                 </Link>
@@ -57,7 +57,7 @@ const Work = () => {
 
     const ItemTemplateCase = () => {
         return (
-            <div className="flex flex-col items-center w-full md:w-1/4 mb-20 md:mb-0">
+            <div className="flex flex-col items-center w-full xl:w-1/4 mb-20 xl:mb-0">
                 <Carousel 
                     value={images} 
                     numVisible={1} 
@@ -65,7 +65,7 @@ const Work = () => {
                     itemTemplate={itemTemplateImgCase}
                     showNavigators={false}
                 />
-                <h2 className="text-2xl md:text-3xl text-center mb-2">Easter House Beach</h2>
+                <h2 className="text-2xl xl:text-3xl text-center mb-2">Easter House Beach</h2>
                 <p className='w-3/4 mb-6'>Based in the south of Costa Rica, we are dedicated to delivering world-class projects to the most demanding clients</p>
                 <Link to={'/project'} className='border-2 px-8 py-3 rounded-lg' style={{ color: '#103737', borderColor: '#103737' }}>View Project ></Link>
             </div>
@@ -79,10 +79,10 @@ const Work = () => {
     return (
     <div>
         <Menu/>
-        <section className="py-24 md:py-40 flex flex-col items-center container mx-auto px-8 md:px-0">
+        <section className="py-24 xl:py-40 flex flex-col items-center container mx-auto px-8 xl:px-0">
             <div className="flex flex-col items-center max-w-xl mb-16">
                 <p className="text-xl mb-4">Let our work do the talking</p>
-                <h1 className="text-5xl md:text-6xl text-center mb-4">We are passionate about making dreams come true.</h1>
+                <h1 className="text-5xl xl:text-6xl text-center mb-4">We are passionate about making dreams come true.</h1>
             </div>
             <Galleria 
                 value={images} 
@@ -96,7 +96,7 @@ const Work = () => {
                 item={itemTemplate} 
             />
         </section>
-        <section className='container mx-auto px-8 md:px-0 flex flex-col md:flex-row justify-between mb-32'>
+        <section className='container mx-auto px-8 xl:px-0 flex flex-col xl:flex-row justify-between mb-32'>
             <ItemTemplateCase/>
             <ItemTemplateCase/>
             <ItemTemplateCase/>
