@@ -1,10 +1,10 @@
 import Menu from "./comps/menu";
 
-function Dashboard() {
+const Dashboard = () => {
   return (
-   <div>
-    <Menu/>
-   </div>
+    <div>
+      <Menu/>
+    </div>
   );
 }
 
