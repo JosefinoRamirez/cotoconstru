@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { InputText } from 'primereact/inputtext';
 import { MultiSelect } from 'primereact/multiselect';
@@ -9,6 +9,8 @@ import Menu from "./comps/menu";
 import Footer from "./comps/footer";
 
 const Contact = () => {
+    document.title = 'Contact Us'
+
     const [ usrEmail, setUsrEmail ] = useState('');
     const [ usrService, setUsrService ] = useState('');
     const citySelectItems = [
@@ -18,6 +20,10 @@ const Contact = () => {
         {label: 'Istanbul', value: 'IST'},
         {label: 'Paris', value: 'PRS'}
     ];
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <div>

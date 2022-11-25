@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { Galleria } from 'primereact/galleria';
 import { Button } from 'primereact/button';
 import { Carousel } from 'primereact/carousel';
@@ -40,7 +42,9 @@ const Work = () => {
                     className="mb-8"
                 />
                 <h2 className="text-2xl md:text-3xl text-center mb-2">{item.caseTitle}</h2>
-                <Button label="View Project >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
+                <Link to={'/project'}>
+                    <Button label="View Project >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
+                </Link>
             </div>
         );
     }
@@ -51,7 +55,7 @@ const Work = () => {
         );
     }
 
-    const ItemTemplateCase = (props) => {
+    const ItemTemplateCase = () => {
         return (
             <div className="flex flex-col items-center w-full md:w-1/4 mb-20 md:mb-0">
                 <Carousel 
@@ -63,10 +67,14 @@ const Work = () => {
                 />
                 <h2 className="text-2xl md:text-3xl text-center mb-2">Easter House Beach</h2>
                 <p className='w-3/4 mb-6'>Based in the south of Costa Rica, we are dedicated to delivering world-class projects to the most demanding clients</p>
-                <Link to={'/project'}>Link to project</Link>
+                <Link to={'/project'} className='border-2 px-8 py-3 rounded-lg' style={{ color: '#103737', borderColor: '#103737' }}>View Project ></Link>
             </div>
         );
     }
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
 
     return (
     <div>

@@ -1,5 +1,6 @@
 import { Button } from 'primereact/button';
 import { Galleria } from 'primereact/galleria';
+import { Link } from 'react-router-dom';
 
 import Menu from "./comps/menu";
 import Footer from './comps/footer';
@@ -39,7 +40,9 @@ const App = () => {
         />
         <h2 className="text-2xl md:text-3xl text-center mb-2">{item.caseTitle}</h2>
         <p className="mb-6 hidden md:block">{item.smallDesc}</p>
-        <Button label="View Project >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
+        <Link to={'/project'}>
+          <Button label="View Project >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
+        </Link>
       </div>
     );
   }
@@ -53,7 +56,9 @@ const App = () => {
           <p className="text-xl mb-4">We are a construction company</p>
           <h1 className="text-5xl md:text-6xl text-center mb-4">We develop luxury projects in paradise.</h1>
           <p className="text-center mb-6 max-w-lg">Based in the south of Costa Rica, we are dedicated to delivering world-class projects to the most demanding clients</p>
-          <Button label="Check our work >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
+          <Link to={'/ourwork'}>
+            <Button label="Check our work >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#103737' }} />
+          </Link>
         </div>
         <Galleria 
           value={images} 
@@ -73,7 +78,9 @@ const App = () => {
           <p className="text-xl mb-4">You’re in good hands</p>
           <h1 className="text-5xl md:text-6xl text-center mb-4">Our obsession with details is contagious.</h1>
           <p className="text-center mb-6 max-w-lg">Our number one source for business is repeat clients and referrals from current and previous clients.</p>
-          <Button label="About Us >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#ffffff' }} />
+          <Link to={'/about'}>
+            <Button label="About Us >" className="rounded-lg" style={{ backgroundColor: '#103737', borderColor: '#ffffff' }} />
+          </Link>
         </div>
       </section>
       <Footer/>

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Galleria } from 'primereact/galleria';
 
 import Menu from "./comps/menu";
@@ -56,6 +57,10 @@ const Project = () => {
         );
     }
 
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
+
     return (
         <div>
             <Menu/>
@@ -63,10 +68,10 @@ const Project = () => {
                 <BreadCrumbComp/>
                 <p className="text-center text-xl mb-6">The ultimate in luxury, privacy and romance.</p>
                 <h1 className="text-5xl md:text-6xl text-center mb-6">The Easter House.</h1>
-                <div className="flex justify-between w-full md:w-1/4 mb-16 px-8 md:px-0">
-                    <p className="flex flex-col w-2/4 md:w-2/6 border-r-2 border-r-gray-300 md:border-l-0 text-center md:text-left mb-4 md:mb-0">Construction <span>June, 2019</span></p>
-                    <p className="flex flex-col w-2/4 md:w-2/6 md:px-6 md:border-x-2 md:border-x-gray-300 text-center md:text-left">Location <span>Puntarenas</span></p>
-                    <p className="flex flex-col w-full md:w-2/6 text-center md:text-left border-t-2 border-t-gray-300 md:border-t-0 pt-4 md:pt-0">Service <span>Keys In hand</span></p>
+                <div className="flex justify-between w-full md:w-1/3 mb-16 px-8 md:px-0">
+                    <p className="flex flex-col w-2/4 md:w-2/6 border-r-2 border-r-gray-300 md:border-r-0 text-center mb-4 md:mb-0">Construction <span>June, 2019</span></p>
+                    <p className="flex flex-col w-2/4 md:w-2/6 md:px-6 md:border-x-2 md:border-x-gray-300 text-center">Location <span>Puntarenas</span></p>
+                    <p className="flex flex-col w-full md:w-2/6 text-center border-t-2 border-t-gray-300 md:border-t-0 pt-4 md:pt-0">Service <span>Keys In hand</span></p>
                 </div>
                 <img src="./Case1.png" alt="Project" className="w-full max-h-96 object-cover"/>
             </section>

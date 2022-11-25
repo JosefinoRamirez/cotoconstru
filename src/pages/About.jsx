@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { Galleria } from 'primereact/galleria';
 
 import Menu from "./comps/menu";
@@ -56,6 +58,10 @@ const About = () => {
         { 'imageSrc': './Icon3.png', 'alt': 'Project Management', 'caseTitle': 'Project Management', 'smallDesc': 'In the course of a project, a number of different elements need to be considered. That’s why our Project Managers will focus on good team coordination and solid collaboration between all the agents from the time a project is initiated until it is complete.' },
         { 'imageSrc': './Icon4.png', 'alt': 'Keys In Hand', 'caseTitle': 'Keys In Hand', 'smallDesc': 'We offer a comprehensive, integrated service that encompasses all project stages with a strong emphasis on quality, streamlining production and minimizing risks for timely completion.' },
     ]
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <div>
