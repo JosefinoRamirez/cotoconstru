@@ -22,16 +22,16 @@ const Footer = (props) => {
     return (
       <footer className="text-white" style={{ backgroundColor: '#000000' }}>
         <section style={{ backgroundColor: '#132523' }} className={"pb-28 flex flex-col items-center px-8 xl:px-0 " + props.footerForm}>
-            <div className="flex flex-col items-center max-w-xl text-white pt-36">
-              <p className="text-xl mb-4">Ready to get started?</p>
-              <h1 className="text-5xl xl:text-6xl text-left xl:text-center mb-4">Let’s start talking about your project.</h1>
+            <div className="flex flex-col items-center max-w-xl pt-36" style={{ color: '#DDFFF1' }}>
+              <p className="text-xl mb-4 uppercase">Ready to get started?</p>
+              <h1 className="text-5xl xl:text-5xl text-left xl:text-center mb-10">Let’s start talking about your project.</h1>
               <span className="flex flex-col w-full xl:w-3/4 mb-3">
-                <label>Email Address</label>
-                <InputText value={usrEmail} onChange={(e) => setUsrEmail(e.target.value)} placeholder="Enter you Email Address" className="rounded-lg" />
+                <label className="mb-2">Email Address</label>
+                <InputText value={usrEmail} onChange={(e) => setUsrEmail(e.target.value)} placeholder="Enter you Email Address" className="rounded-lg" color="#303030" />
               </span>
               <span className="flex flex-col w-full xl:w-3/4 mb-6">
-                <label>What services are you interested in?</label>
-                <MultiSelect value={usrService} options={citySelectItems} onChange={(e) => setUsrService(e.value)} placeholder="Select all that apply" className="rounded-lg" />
+                <label className="mb-2">What services are you interested in?</label>
+                <MultiSelect value={usrService} options={citySelectItems} onChange={(e) => setUsrService(e.value)} placeholder="Select all that apply" className="rounded-lg" color="#303030"/>
               </span>
               <Button label="Get in touch >" className="rounded-lg w-3/4" style={{ backgroundColor: '#103737', borderColor: '#ffffff' }} />
             </div>

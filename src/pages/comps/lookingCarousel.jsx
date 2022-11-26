@@ -14,7 +14,7 @@ const itemTemplateSecond = (item) => {
         <h2 className="text-2xl xl:text-3xl text-center mb-2">{item.caseTitle}</h2>
         <p className="mb-6 hidden xl:block">{item.smallDesc}</p>
         <Link to={'/project'}>
-            <Button label="View Project >" className="rounded-lg text-black" style={{ backgroundColor: '#ffffff', borderColor: '#ffffff' }} />
+            <Button label="View Project >" className="rounded-xl px-6 text-black" style={{ backgroundColor: '#ffffff', borderColor: '#ffffff' }} />
         </Link>
       </div>
     );
