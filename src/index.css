@@ -61,3 +61,12 @@ h1, h2, h3, h4, h5, h6, a, button, button span {
 .p-galleria.p-galleria-indicators-bottom .p-galleria-indicator {
     margin-right: 0.75rem;
 }
+
+.react-stacked-center-carousel-slide--1 h2,
+.react-stacked-center-carousel-slide--1 p,
+.react-stacked-center-carousel-slide--1 a,
+.react-stacked-center-carousel-slide-1 h2,
+.react-stacked-center-carousel-slide-1 p,
+.react-stacked-center-carousel-slide-1 a {
+    opacity: 0;
+}
