@@ -99,3 +99,8 @@ footer a {
     background-color: #45B097;
     border-radius: 0.75rem;
 }
+
+.cotoAboutCarousel .p-carousel-item .p-carousel-item-active {
+    display: flex;
+    justify-content: center;
+}
