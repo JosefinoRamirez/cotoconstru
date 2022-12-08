@@ -27,7 +27,7 @@ const Project = () => {
         { 'imageSrc': './Case1.png', 'alt': 'Case 1', 'caseTitle': 'Easter House Beach House', 'smallDesc': 'Small house description' },
       ]
     
-      const responsiveOptions = [
+    const responsiveOptions = [
         {
             breakpoint: '1024px',
             numVisible: 5
