@@ -99,7 +99,7 @@ const App = () => {
           <i className="pi pi-angle-right text-xl"></i>
         </Button>
       </>
-    </div>
+        </div>
       </section>
       <section style={{ backgroundColor: '#0B4242' }} className="pb-28 flex flex-col items-center">
         <img src="./Hero1.png" alt="Details" className="w-full mb-16" style={{ height: '420px', objectFit: 'cover' }}/>

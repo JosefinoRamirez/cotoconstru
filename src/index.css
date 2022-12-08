@@ -3,12 +3,20 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@300;400;700;900&display=swap');
 
-*, p, span {
+*, p, span, footer h6, footer a {
     font-family: 'DM Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, a, button, button span {
     font-family: 'Merriweather', serif;
+}
+
+footer h6 {
+    color: #9FA09E;
+}
+
+footer a {
+    font-weight: 400;
 }
 
 .p-galleria .p-galleria-indicators .p-galleria-indicator button,
@@ -69,4 +77,25 @@ h1, h2, h3, h4, h5, h6, a, button, button span {
 .react-stacked-center-carousel-slide-1 p,
 .react-stacked-center-carousel-slide-1 a {
     opacity: 0;
+}
+
+.cotoCarousel .p-carousel-content {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.cotoCarousel .p-carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cotoCarousel .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background-color: #DDFFF1;
+}
+
+.cotoCarousel .p-carousel .p-carousel-indicators .p-carousel-indicator button {
+    background-color: #45B097;
+    border-radius: 0.75rem;
 }
